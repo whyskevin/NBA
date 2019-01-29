@@ -11,7 +11,7 @@ var year = '2019';
 var month = '01';
 var day = '13';
 const format = 'json';
-const api_key = 'uq4fu6ffzubuxbqvpba59rv3'; //CHANGE TO YOUR API KEY
+const api_key = 'YOURAPIKEY'; //CHANGE TO YOUR API KEY
 
 var scheduleURL = 'https://api.sportradar.us/nba/' + access_level + '/'+ version + '/' + language_code + '/games/'+ year+'/' + month + '/' + day+ '/schedule.' + format + '?api_key=' + api_key;
 
@@ -101,9 +101,9 @@ var newHeader = "<h1 id = \"header\">Schedule for " + month + "/" + day + "/" + 
 document.getElementById("header").innerHTML = newHeader;
 
 ////Make the first HTTP call
-//http.open("GET", scheduleURL, true);
-//http.send();
-http = createCORSRequest("GET", scheduleURL);
+http.open("GET", scheduleURL, true);
+http.send();
+//http = createCORSRequest("GET", scheduleURL);
     
 }
 

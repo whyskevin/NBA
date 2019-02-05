@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>NBA Daily Schedule</title>
+    </head>
+    <body>
+        <form action = "javascript:clicked()">
+            Month:
+            <br><input type="text" id ="inputMonth"><br>
+            Day:
+            <br><input type="text" id ="inputDay"><br>
+            Year:
+            <br><input type="text" id ="inputYear"><br>
+            <br><input type="submit" value="Submit">
+            <input type="button" value="Reset" onClick='this.form.reset()' />
+        </form>
+        <h1 id = "header">Display the schedule below:</h1>
+        <div id = "schedule">
+            <h2> Schedule should be here! </h2>
+        </div>
+    </body>
+    <script src="nba.js"></script>
+</html>

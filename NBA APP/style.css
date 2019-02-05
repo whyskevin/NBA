@@ -1,0 +1,25 @@
+body {
+    background-image: url('default.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left right;
+    color: white;
+    text-shadow: 2px 2px 1px black; 
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-variant: small-caps;
+}
+input[type=text] {
+    padding: 4px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+input[type=text]:focus {
+    border-color: #ccc;
+}
+input[type=submit] {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+}
